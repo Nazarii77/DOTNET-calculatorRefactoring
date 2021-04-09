@@ -1,0 +1,13 @@
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\bin\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.exe
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\bin\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.deps.json
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\bin\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.runtimeconfig.json
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\bin\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.runtimeconfig.dev.json
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\bin\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.dll
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\bin\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.pdb
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\obj\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.csprojAssemblyReference.cache
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\obj\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.AssemblyInfoInputs.cache
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\obj\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.AssemblyInfo.cs
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\obj\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.csproj.CoreCompileInputs.cache
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\obj\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.dll
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\obj\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.pdb
+C:\Users\boich\source\repos\CalculatorInterfaceRefactoring\CalculatorInterfaceRefactoring\obj\Debug\netcoreapp3.1\CalculatorInterfaceRefactoring.genruntimeconfig.cache
