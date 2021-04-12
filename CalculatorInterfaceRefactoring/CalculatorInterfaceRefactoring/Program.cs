@@ -18,7 +18,12 @@ namespace CalculatorInterfaceRefactoring
             //Creational factory
             calculatorRefactored.Calculate("one", 123456);
             calculatorRefactored.Calculate("two", 123456);
-            calculatorRefactored.Calculate("three", 123456); 
+            calculatorRefactored.Calculate("three", 123456);
+
+            //IF I we had type at the beginning:
+            //var cf = new CalculatorFactory();
+            //var c1 = pf.CreateCalculator("one");
+            //var c2 = pf.CreateCalculator("three");
         }
     }
 }
