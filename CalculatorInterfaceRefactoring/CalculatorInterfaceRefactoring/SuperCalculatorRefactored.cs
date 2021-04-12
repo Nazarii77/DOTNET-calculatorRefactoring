@@ -5,9 +5,9 @@ namespace CalculatorInterfaceRefactoring
 {
     class SuperCalculatorRefactored
     {   //DRY principle Do Not Repeat Yourself
-        public void logStart()
+        public void logStart(string type)
         {
-            Console.WriteLine(Constants.calcExecutingConstant);
+            Console.WriteLine(String.Format(Constants.calcExecutingConstant, char.ToUpper(type[0]) + type.Substring(1)));
         }
         // Here is my implementation of the Calculate Method for SuperCalculatorRefactored as I can not touch the original
         public string Calculate(string type, int num)
@@ -15,7 +15,7 @@ namespace CalculatorInterfaceRefactoring
             //DRY principle Do Not Repeat Yourself
             if (type != "" && type != null)
             {
-                logStart();
+                logStart(type);
                 return $"{Constants.resultIsConstant} {num + Constants.numberNames.FirstOrDefault(x => x.Value == type).Key}";
             }
             return "";

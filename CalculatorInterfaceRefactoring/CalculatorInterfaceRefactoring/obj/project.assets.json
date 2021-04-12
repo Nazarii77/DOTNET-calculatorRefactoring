@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\boich\\source\\repos\\CalculatorInterfaceRefactoring\\CalculatorInterfaceRefactoring\\CalculatorInterfaceRefactoring.csproj",
+      "projectUniqueName": "D:\\Flutter\\DOTNET-calculatorRefactoring\\CalculatorInterfaceRefactoring\\CalculatorInterfaceRefactoring\\CalculatorInterfaceRefactoring.csproj",
       "projectName": "CalculatorInterfaceRefactoring",
-      "projectPath": "C:\\Users\\boich\\source\\repos\\CalculatorInterfaceRefactoring\\CalculatorInterfaceRefactoring\\CalculatorInterfaceRefactoring.csproj",
+      "projectPath": "D:\\Flutter\\DOTNET-calculatorRefactoring\\CalculatorInterfaceRefactoring\\CalculatorInterfaceRefactoring\\CalculatorInterfaceRefactoring.csproj",
       "packagesPath": "C:\\Users\\boich\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\boich\\source\\repos\\CalculatorInterfaceRefactoring\\CalculatorInterfaceRefactoring\\obj\\",
+      "outputPath": "D:\\Flutter\\DOTNET-calculatorRefactoring\\CalculatorInterfaceRefactoring\\CalculatorInterfaceRefactoring\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\boich\\AppData\\Roaming\\NuGet\\NuGet.Config",

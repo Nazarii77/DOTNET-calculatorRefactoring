@@ -18,6 +18,6 @@ namespace CalculatorInterfaceRefactoring
         public static string resultIsConstant = "Result is:";
 
         //DRY principle Do Not Repeat Yourself
-        public static string calcExecutingConstant = "CalcOne executing!";
+        public static string calcExecutingConstant = "Calc{0} executing!";
     }
 }
