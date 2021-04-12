@@ -12,10 +12,10 @@ namespace CalculatorInterfaceRefactoring
             // The Calculate functionality can be implemented in various ways depending on the type of the calculator
             var calculator = new SuperCalculator();
             var calculatorRefactored = new SuperCalculatorRefactored(); 
-
+            //Creational factory
             calculator.Calculate("one", 123); 
             calculator.Calculate("two", 123);
-
+            //Creational factory
             calculatorRefactored.Calculate("one", 123456);
             calculatorRefactored.Calculate("two", 123456);
             calculatorRefactored.Calculate("three", 123456); 
