@@ -7,6 +7,7 @@ namespace CalculatorInterfaceRefactoring
     public class Constants
     {
         //DRY principle Do Not Repeat Yourself in case some constant is needed somewhere else
+        //If I ever need to extend the logic of the calculator I will add new key-value pairs here:
         public static IDictionary<int, string> numberNames = new Dictionary<int, string>()
         {
             { 1 , "one"},
