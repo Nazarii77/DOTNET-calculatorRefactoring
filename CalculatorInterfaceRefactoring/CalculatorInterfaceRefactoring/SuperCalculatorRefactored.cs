@@ -9,7 +9,7 @@ namespace CalculatorInterfaceRefactoring
         {
             Console.WriteLine(Constants.calcExecutingConstant);
         }
-
+        // Here is my implementation of the Calculate Method for SuperCalculatorRefactored as I can not touch the original
         public string Calculate(string type, int num)
         {
             //DRY principle Do Not Repeat Yourself
