@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace CalculatorInterfaceRefactoring
 {
-    class SuperCalculatorRefactored : SuperCalculator, ICalculatorInterface
+    class SuperCalculatorRefactored : SuperCalculator,  IStrategy
     {   //DRY principle Do Not Repeat Yourself
         public void logStart(string type)
         {
