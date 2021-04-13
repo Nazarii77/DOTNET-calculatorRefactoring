@@ -3,22 +3,23 @@ using System.Linq;
 
 namespace CalculatorInterfaceRefactoring
 {
-    class SuperCalculatorRefactored : SuperCalculator,  IStrategy
-    {   //DRY principle Do Not Repeat Yourself
+    class SuperCalculatorRefactored : SuperCalculator, IStrategy
+    { 
         public void logStart(string type)
         {
             Console.WriteLine(String.Format(Constants.calcExecutingConstant, char.ToUpper(type[0]) + type.Substring(1)));
         }
-        // Here is my implementation of the Calculate Method for SuperCalculatorRefactored as I can not touch the original
         public string Calculate(string type, int num)
         {
-            //DRY principle Do Not Repeat Yourself
-            if (type != "" && type != null)
+            switch (type)
             {
-                logStart(type);
-                return $"{Constants.resultIsConstant} {num + Constants.numberNames.FirstOrDefault(x => x.Value == type).Key}";
+                case "one":
+                case "two":
+                    return base.Calculate(type, num);
+                default:
+                    logStart(type);
+                    return $"{Constants.resultIsConstant} {num + Constants.numberNames.FirstOrDefault(x => x.Value == type).Key}";
             }
-            return "";
-        }
+        }         
     }
 }

@@ -38,42 +38,19 @@ namespace CalculatorInterfaceRefactoring
  
     class Program
     {
+
+
+ 
+
         static void Main(string[] args)
-        {
-
-            //Trying to do with STRATEGY pattern
-
-            var context = new Context();
-
-            Console.WriteLine("Client: Calculator is set to SuperCalculator.");
-            context.SetStrategy(new SuperCalculator());
-            context.Calculate("one", 234);
-
-            Console.WriteLine();
-
-            Console.WriteLine("Client: Calculator is set to SuperCalculatorRefactored.");
-            context.SetStrategy(new SuperCalculatorRefactored());
-            context.Calculate("three", 345);
-
-
-            // I suppose here can be used Factory method:
-            // To generate different types of calculators
-            // All the Calculators will do the Calculate
-            // The Calculate functionality can be implemented in various ways depending on the type of the calculator
-            var calculator = new SuperCalculator();
-            var calculatorRefactored = new SuperCalculatorRefactored(); 
-            //Creational factory
-            calculator.Calculate("one", 123); 
-            calculator.Calculate("two", 123);
-            //Creational factory
-            calculatorRefactored.Calculate("one", 123456);
-            calculatorRefactored.Calculate("two", 123456);
-            calculatorRefactored.Calculate("three", 123456);
-
-            //IF we had type at the beginning:
-            //var cf = new CalculatorFactory();
-            //var c1 = pf.CreateCalculator("one");
-            //var c2 = pf.CreateCalculator("three");
+        { 
+             var calculator = new SuperCalculator();
+             var calculatorRefactored = new SuperCalculatorRefactored();            
+             calculator.Calculate("one", 123); 
+             calculator.Calculate("two", 123); 
+             calculatorRefactored.Calculate("three", 123456);
+             calculatorRefactored.Calculate("one", 123456);
+             calculatorRefactored.Calculate("one", 123456); 
         }
     }
 }
