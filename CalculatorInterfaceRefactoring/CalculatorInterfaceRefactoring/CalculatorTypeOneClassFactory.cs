@@ -6,12 +6,16 @@ namespace CalculatorInterfaceRefactoring
 {
     class CalculatorTypeOneClassFactory : CalculatorFactory
     {
-
         private string _type;
-        private int _num;
+        public string Type
+        {
+            get { return _type; }
+            set { _type = value; }
+        }
+
         public override CalculatorClass GetCalculator()
         {
-            return new CalculatorTypeOneClass(_type, _num);
+            return new CalculatorTypeOneClass(Type);
         }
     }
 }

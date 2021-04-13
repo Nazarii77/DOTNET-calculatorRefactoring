@@ -1,5 +1,4 @@
-﻿using CalculatorInterfaceRefactoring.CalculatorMethods;
-using System;
+﻿using System;
 using System.Linq; 
 
 namespace CalculatorInterfaceRefactoring
@@ -20,9 +19,11 @@ namespace CalculatorInterfaceRefactoring
                     var superCalculator = new SuperCalculator();
                     return superCalculator.Calculate(type, num);
                 case "three":
-                    return CalculateTwo(type, num);
+                    var calculator = new CalculatorTypeTwoClass(type);
+                    return calculator.Calculate(num);
                 case "seventyseven":
-                    return CalculateSeventySeven(type, num);
+                    var calculator77 = new CalculatorTypeTwoClass(type);
+                    return calculator77.Calculate(num);
                 default:
                     logStart(type);
                     return $"{Constants.resultIsConstant} {num + Constants.numberNames.FirstOrDefault(x => x.Value == type).Key}";

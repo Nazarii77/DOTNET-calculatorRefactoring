@@ -10,8 +10,7 @@ namespace CalculatorInterfaceRefactoring
     abstract class CalculatorClass
     {
         public abstract string Type { get; set; }
-        public abstract int Num { get; set; }
 
-        public abstract string Calculate(string type, int num);
+        public abstract string Calculate(int num);
     }
 }

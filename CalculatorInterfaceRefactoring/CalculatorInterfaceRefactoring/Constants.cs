@@ -20,6 +20,5 @@ namespace CalculatorInterfaceRefactoring
 
         //DRY principle Do Not Repeat Yourself
         public static string calcExecutingConstant = "Calc{0} executing!";
-        //test sharing111111111
     }
 }

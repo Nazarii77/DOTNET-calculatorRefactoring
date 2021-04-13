@@ -8,10 +8,9 @@ namespace CalculatorInterfaceRefactoring
     {
 
         private string _type;
-        private int _num;
         public override CalculatorClass GetCalculator()
         {
-            return new CalculatorTypeTwoClass(_type, _num);
+            return new CalculatorTypeTwoClass(_type);
         }
     }
 }
