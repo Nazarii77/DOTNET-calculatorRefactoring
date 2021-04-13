@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace CalculatorInterfaceRefactoring
 {
-    partial class SuperCalculatorRefactored : SuperCalculator
+    partial class SuperCalculatorRefactored
     {
         public void logStart(string type)
         {
@@ -16,6 +16,7 @@ namespace CalculatorInterfaceRefactoring
             {
                 case "one":
                 case "two":
+                    //composition
                     var superCalculator = new SuperCalculator();
                     return superCalculator.Calculate(type, num);
                 case "three":
