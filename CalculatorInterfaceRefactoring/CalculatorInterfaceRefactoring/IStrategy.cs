@@ -7,5 +7,6 @@ namespace CalculatorInterfaceRefactoring
     interface IStrategy
     {
         string Calculate(string type, int num);
+        string CalculateTypeOne(string type, int num);
     }
 }

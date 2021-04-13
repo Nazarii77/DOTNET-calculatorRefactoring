@@ -1,9 +1,10 @@
-﻿using System;
+﻿using CalculatorInterfaceRefactoring.CalculatorMethods;
+using System;
 using System.Linq;
 
 namespace CalculatorInterfaceRefactoring
 {
-    class SuperCalculatorRefactored : SuperCalculator, IStrategy
+    partial class SuperCalculatorRefactored : SuperCalculator
     { 
         public void logStart(string type)
         {
@@ -14,12 +15,16 @@ namespace CalculatorInterfaceRefactoring
             switch (type)
             {
                 case "one":
+                    return CalculateOne(type, num);
                 case "two":
-                    return base.Calculate(type, num);
+                    return CalculateTwo(type, num);
+                case "seventyseven":
+                    return CalculateSeventySeven(type, num);
                 default:
                     logStart(type);
                     return $"{Constants.resultIsConstant} {num + Constants.numberNames.FirstOrDefault(x => x.Value == type).Key}";
             }
-        }         
+        }
+
     }
 }

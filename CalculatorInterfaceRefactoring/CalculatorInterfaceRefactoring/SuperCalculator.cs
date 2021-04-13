@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CalculatorInterfaceRefactoring
 {
-    class SuperCalculator : IStrategy
+    class SuperCalculator
     { 
         // 1. Suppose you have some legacy class with Calculate() method
         // 2. This method is a public and used by many other classes, you are not allowed to change method signature
