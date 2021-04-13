@@ -1,11 +1,11 @@
 ﻿using CalculatorInterfaceRefactoring.CalculatorMethods;
 using System;
-using System.Linq;
+using System.Linq; 
 
 namespace CalculatorInterfaceRefactoring
 {
     partial class SuperCalculatorRefactored : SuperCalculator
-    { 
+    {
         public void logStart(string type)
         {
             Console.WriteLine(String.Format(Constants.calcExecutingConstant, char.ToUpper(type[0]) + type.Substring(1)));
@@ -15,8 +15,10 @@ namespace CalculatorInterfaceRefactoring
             switch (type)
             {
                 case "one":
-                    return CalculateOne(type, num);
                 case "two":
+                    var superCalculator = new SuperCalculator();
+                    return superCalculator.Calculate(type, num);
+                case "three":
                     return CalculateTwo(type, num);
                 case "seventyseven":
                     return CalculateSeventySeven(type, num);

@@ -29,28 +29,54 @@ namespace CalculatorInterfaceRefactoring
 
         // The Context delegates some work to the Strategy object instead of
         // implementing multiple versions of the algorithm on its own.
-        internal void Calculate(string type,int num)
+        internal void Calculate(string type, int num)
         {
             Console.WriteLine("Context: Sorting data using the strategy (not sure how it'll do it)");
             var result = this._strategy.Calculate(type, num);
         }
-    } 
- 
+    }
+
     class Program
     {
 
 
- 
+
 
         static void Main(string[] args)
-        { 
-             var calculator = new SuperCalculator();
-             var calculatorRefactored = new SuperCalculatorRefactored();            
-             calculator.Calculate("one", 123); 
-             calculator.Calculate("two", 123); 
-             calculatorRefactored.Calculate("three", 123456);
-             calculatorRefactored.Calculate("one", 123456);
-             calculatorRefactored.Calculate("one", 123456); 
+        {
+            var calculator = new SuperCalculator();
+            var calculatorRefactored = new SuperCalculatorRefactored();
+            calculator.Calculate("one", 123);
+            calculator.Calculate("two", 123);
+            calculatorRefactored.Calculate("three", 123456);
+            calculatorRefactored.Calculate("one", 123456);
+            calculatorRefactored.Calculate("one", 123456);
+            calculatorRefactored.Calculate("two", 123456);
+
+
+            CalculatorFactory factory = null;
+            Console.Write("Enter the Calculator type you would like to visit: ");
+            string calculatorByFactory = Console.ReadLine();
+
+            switch (calculatorByFactory.ToLower())
+            {
+                case "one":
+                    factory = new CalculatorTypeOneClassFactory();
+                    break;
+                case "two":
+                    factory = new CalculatorTypeOneClassFactory();
+                    break;
+                case "three":
+                    factory = new CalculatorTypeTwoClassFactory();
+                    break;
+                default:
+                    factory = new CalculatorTypeTwoClassFactory();
+                    break;
+            }
+
+            var propertypeOfCalculator  = factory.GetCalculator();
+
+            propertypeOfCalculator.Calculate("one", 1234);
         }
     }
 }

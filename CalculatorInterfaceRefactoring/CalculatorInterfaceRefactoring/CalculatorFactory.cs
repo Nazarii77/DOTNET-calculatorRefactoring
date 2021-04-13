@@ -4,20 +4,10 @@ using System.Text;
 
 namespace CalculatorInterfaceRefactoring
 {
-    static class CalculatorFactory
-    {
-       //public static ICalculatorInterface GetCalculatorInstance(string type)
-       //{
-       //    switch (type)
-       //    {
-       //        case "one":
-       //        case "two":
-       //            return new SuperCalculator();
-       //        case "three":
-       //            return new SuperCalculatorRefactored();
-       //        default:
-       //            return null;
-       //    }
-       //}
+    abstract class CalculatorFactory
+    {    /// <summary>  
+         /// The 'Creator' Abstract Class  
+         /// </summary>  
+        public abstract CalculatorClass GetCalculator();
     }
 }
